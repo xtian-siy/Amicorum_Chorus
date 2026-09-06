@@ -94,12 +94,16 @@ export default function HomePage() {
             copy="A glimpse of the warmth, prayer, and fellowship at the center of every Amicorum performance."
           />
           <button className="performance-card" type="button" onClick={() => setShowPerformance(true)} aria-label="Open sample performance">
-            <img src="/images/hero/amicorum-hero-sample.png" alt="Choir performing in a church" />
+           <img
+            className="hero-image"
+            src={coverPhoto}
+            alt="Amicorum Chorus gathered for a performance"
+          />
             <span className="performance-overlay" />
             <span className="play-button"><i>▶</i></span>
             <span className="performance-caption">
               <small>Featured performance</small>
-              <strong>Ave Verum Corpus</strong>
+              <strong>Manila Center Performance</strong>
               <em>Sample presentation</em>
             </span>
           </button>
@@ -134,7 +138,11 @@ export default function HomePage() {
           </div>
           <div className="gallery-grid">
             <div className="gallery-photo gallery-photo-main">
-              <img src="/images/hero/amicorum-hero-sample.png" alt="Choir members singing together" />
+             <img
+            className="hero-image"
+            src={coverPhoto}
+            alt="Amicorum Chorus gathered for a performance"
+          />
               <span>In performance <i>↗</i></span>
             </div>
             <div className="gallery-quote">

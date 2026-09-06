@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHeader from '../components/layout/PageHeader.jsx'
 import PageLayout from '../components/layout/PageLayout.jsx'
 import { repertoire } from '../data/repertoire.js'
+import coverPhoto from '../assets/images/cover.jpg'
 
 export default function MusicPage() {
   const [open, setOpen] = useState(false)
@@ -12,7 +13,11 @@ export default function MusicPage() {
 
       <section className="page-section content-wrap featured-listen">
         <div className="media-frame">
-          <img src="/images/hero/amicorum-hero-sample.png" alt="Choir singing in a church" />
+           <img
+                      className="hero-image"
+                      src={coverPhoto}
+                      alt="Amicorum Chorus gathered for a performance"
+                    />
           <button type="button" className="play-button" onClick={() => setOpen(true)} aria-label="Open performance preview">▶</button>
         </div>
         <div className="media-copy">

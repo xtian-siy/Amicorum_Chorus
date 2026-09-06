@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHeader from '../components/layout/PageHeader.jsx'
 import PageLayout from '../components/layout/PageLayout.jsx'
 import { gallery } from '../data/gallery.js'
+import coverPhoto from '../assets/images/cover.jpg'
 
 export default function GalleryPage() {
   const [selected, setSelected] = useState(null)
@@ -13,7 +14,7 @@ export default function GalleryPage() {
         <div className="gallery-page-grid">
           {gallery.map((item, index) => (
             <button type="button" className={`gallery-tile gallery-tile-${index + 1}`} key={item.title} onClick={() => setSelected(item)}>
-              <img src="/images/hero/amicorum-hero-sample.png" alt={item.caption} style={{ objectPosition: item.position }} />
+              <img src={coverPhoto} alt={item.caption} style={{ objectPosition: item.position }} />
               <span><small>0{index + 1}</small><strong>{item.title}</strong><i>View ↗</i></span>
             </button>
           ))}
