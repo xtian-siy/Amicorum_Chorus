@@ -3,6 +3,9 @@ import Footer from '../components/layout/Footer.jsx'
 import Navbar from '../components/layout/Navbar.jsx'
 import SectionTitle from '../components/ui/SectionTitle.jsx'
 import coverPhoto from '../assets/images/cover.jpg'
+import acLogo from '../assets/images/ac-logo.jpg'
+import sahig from '../assets/images/sahig.jpg'
+import perf from '../assets/images/in_perf.jpg'
 
 const voices = [
   { name: 'Soprano', line: 'Light · clarity · lift', note: 'S' },
@@ -14,7 +17,7 @@ const voices = [
 
 export default function HomePage() {
 
- 
+
   const [showPerformance, setShowPerformance] = useState(false)
 
   return (
@@ -23,11 +26,18 @@ export default function HomePage() {
 
       <main id="main-content">
         <section className="hero-section" aria-labelledby="hero-title">
-          <img
+          <video
             className="hero-image"
-            src={coverPhoto}
-            alt="Amicorum Chorus gathered for a performance"
-          />
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={coverPhoto}
+          >
+            <source src="/videos/amicorum-hero.mp4" type="video/mp4" />
+          </video>
+
+
           <div className="hero-shade" />
           <div className="hero-ornament" aria-hidden="true"><span>✦</span></div>
           <div className="hero-content">
@@ -48,9 +58,12 @@ export default function HomePage() {
 
         <section id="about" className="intro-section content-wrap">
           <p className="vertical-word" aria-hidden="true">AMICORUM</p>
+
           <div className="intro-kicker">
-            <span className="flourish">A</span>
-            <p>More than a choir.<br />A circle of friends.</p>
+
+          <img src={acLogo} alt="ac-logo"/>
+
+
           </div>
           <div className="intro-copy">
             <p className="eyebrow">Our story</p>
@@ -60,16 +73,18 @@ export default function HomePage() {
           </div>
         </section>
 
+
+{/* make a dynamic announcement */}
         <section id="events" className="event-section">
           <div className="content-wrap">
             <div className="event-topline">
               <p className="eyebrow light">Gather with us</p>
-              <span className="sample-tag">Sample event</span>
+
             </div>
             <div className="event-layout">
               <div className="event-date" aria-label="Sample date, December 8">
-                <span>DEC</span>
-                <strong>08</strong>
+                <span>SEP</span>
+                <strong>12</strong>
                 <small>2026</small>
               </div>
               <div className="event-details">
@@ -96,15 +111,15 @@ export default function HomePage() {
           <button className="performance-card" type="button" onClick={() => setShowPerformance(true)} aria-label="Open sample performance">
            <img
             className="hero-image"
-            src={coverPhoto}
+            src={sahig}
             alt="Amicorum Chorus gathered for a performance"
           />
             <span className="performance-overlay" />
             <span className="play-button"><i>▶</i></span>
             <span className="performance-caption">
               <small>Featured performance</small>
-              <strong>Manila Center Performance</strong>
-              <em>Sample presentation</em>
+              <strong>One Voice27</strong>
+
             </span>
           </button>
         </section>
@@ -140,7 +155,7 @@ export default function HomePage() {
             <div className="gallery-photo gallery-photo-main">
              <img
             className="hero-image"
-            src={coverPhoto}
+            src={perf}
             alt="Amicorum Chorus gathered for a performance"
           />
               <span>In performance <i>↗</i></span>
@@ -176,9 +191,10 @@ export default function HomePage() {
           <div className="performance-modal" role="dialog" aria-modal="true" aria-labelledby="performance-title" onMouseDown={(event) => event.stopPropagation()}>
             <button type="button" className="modal-close" onClick={() => setShowPerformance(false)} aria-label="Close">×</button>
             <p className="eyebrow light">Performance preview</p>
-            <h2 id="performance-title">Your choir video will live here.</h2>
-            <p>Connect an official Facebook or YouTube performance later and this card can open it without taking visitors away from the site.</p>
-            <a className="button button-gold" href="https://www.facebook.com/profile.php?id=61591881446609" target="_blank" rel="noreferrer">Visit Facebook <span>↗</span></a>
+
+            <h2 id="performance-title">Get updates on our latest performance.</h2>
+            <p>Check out our latest performance on Facebook!</p>
+            <a className="button button-gold" href="https://www.facebook.com/reel/2169945600227260" target="_blank" rel="noreferrer">Visit Facebook Post<span>↗</span></a>
           </div>
         </div>
       )}

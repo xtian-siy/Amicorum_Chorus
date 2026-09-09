@@ -19,7 +19,7 @@ export default function Navbar() {
       </div>
       <header className="site-header">
         <a className="brand" href="/" aria-label="Amicorum Chorus home">
-          <img className="brand-logo" src="/images/branding/amicorum-mark.png" alt="" />
+          <img className="brand-logo" src="/images/branding/amicorum-mark.png" alt="ac-logo" />
           <span className="brand-copy"><strong>Amicorum</strong><small>Chorus</small></span>
         </a>
 

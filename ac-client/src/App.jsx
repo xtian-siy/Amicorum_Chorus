@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import AboutPage from './pages/AboutPage.jsx'
-import ChoirPage from './pages/ChoirPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import EventDetailsPage from './pages/EventDetailsPage.jsx'
 import EventsPage from './pages/EventsPage.jsx'
@@ -17,7 +16,6 @@ const routes = {
   '/music': MusicPage,
   '/events': EventsPage,
   '/events/sacred-song': EventDetailsPage,
-  '/choir': ChoirPage,
   '/gallery': GalleryPage,
   '/join': JoinPage,
   '/contact': ContactPage,
@@ -29,7 +27,6 @@ const routeTitles = {
   '/music': 'Music · Amicorum Chorus',
   '/events': 'Events · Amicorum Chorus',
   '/events/sacred-song': 'An Evening of Sacred Song · Amicorum Chorus',
-  '/choir': 'Our Choir · Amicorum Chorus',
   '/gallery': 'Gallery · Amicorum Chorus',
   '/join': 'Join the Choir · Amicorum Chorus',
   '/contact': 'Contact & Bookings · Amicorum Chorus',
