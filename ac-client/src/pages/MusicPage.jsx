@@ -34,10 +34,9 @@ export default function MusicPage() {
         </div>
         <div className="media-copy">
           <p className="eyebrow">Featured performance</p>
-          <h2>Ave Verum Corpus</h2>
+          <h2>One Voice 27</h2>
           <p>
-            A sample presentation showing where an official performance video,
-            program note, and recording credit can live.
+           Watch here our latest performance of One Voice 27, a choral work by composer and conductor Dr. David L. Brunner, performed by the Amicorum Chorus.
           </p>
           {/* <button
             className="text-link"
@@ -56,9 +55,9 @@ export default function MusicPage() {
             <h2>
               Music for worship,
               <br />
-              <em>gathering, and reflection.</em>
+              <em>concerts, and celebration.</em>
             </h2>
-            <p></p>
+            <p>Sacred works and concert favorites from the Amicorum Chorus songbook.</p>
           </header>
           <div className="repertoire-grid">
             {repertoire.map((group, index) => (
@@ -108,7 +107,7 @@ export default function MusicPage() {
             </p>
             <a
               className="button button-gold"
-              href="https://www.facebook.com/profile.php?id=61591881446609"
+              href="https://www.facebook.com/reel/2169945600227260"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,7 +1,6 @@
 import PageHeader from "../components/layout/PageHeader.jsx";
 import PageLayout from "../components/layout/PageLayout.jsx";
 import SectionTitle from "../components/ui/SectionTitle.jsx";
-import { members } from '../data/members.js'
 import boss from '../assets/images/bossing.jpg'
 
 export default function AboutPage() {
@@ -20,7 +19,6 @@ export default function AboutPage() {
 
           <img src={boss} alt="Conductor" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
 
-
         </div>
 
 
@@ -36,6 +34,8 @@ export default function AboutPage() {
           </a>
         </div>
       </section>
+
+
 
       <section className="page-section values-panel">
         <div className="content-wrap">
@@ -78,30 +78,33 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="page-section content-wrap choir-intro">
-        <p className="eyebrow">How we sing</p>
-        <h2>
-          Harmony begins with listening—to the score, to the room, and to one
-          another.
-        </h2>
-        <p>
-          Amicorum’s sound is formed by singers across four voice sections. This
-          page is ready for member portraits and the conductor’s official
-          biography when those materials are available.
-        </p>
+
+      {/* Replace these statements and the photo frame when the official content is ready. */}
+      <section className="page-section content-wrap vision-mission-section">
+        <div className="vision-mission-copy">
+          <p className="eyebrow">Our purpose</p>
+          <h2>
+            Our vision.
+            <br />
+            <em>Our mission.</em>
+          </h2>
+          <div className="vision-mission-statement">
+            <span>01 / Vision</span>
+            <h3>Vision</h3>
+            <p>The choir’s official vision statement will be placed here.</p>
+          </div>
+          <div className="vision-mission-statement">
+            <span>02 / Mission</span>
+            <h3>Mission</h3>
+            <p>The choir’s official mission statement will be placed here.</p>
+          </div>
+        </div>
+        <figure className="vision-mission-photo" aria-label="Placeholder for a future choir photograph">
+          <span aria-hidden="true">AC</span>
+          <figcaption>Choir photo to come</figcaption>
+        </figure>
       </section>
 
-        <section className="voice-cards-section page-section">
-              <div className="content-wrap voice-card-grid">
-                {members.map((voice, index) => (
-                  <article className="voice-card" key={voice.section}>
-                    <span className="voice-card-number">0{index + 1}</span>
-                    <span className="voice-card-initial" aria-hidden="true">{voice.initial}</span>
-                    <h2>{voice.section}</h2><p className="voice-quality">{voice.quality}</p><p>{voice.description}</p>
-                  </article>
-                ))}
-              </div>
-            </section>
 
              <section className="page-section content-wrap story-intro">
         <div className="drop-letter" aria-hidden="true">
@@ -126,6 +129,8 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+
 
       <section id="join" className="join-section">
           <div className="join-rings" aria-hidden="true"><i /><i /><i /></div>

@@ -1,5 +1,35 @@
 export const repertoire = [
-  { category: 'Sacred classics', pieces: ['Ave Verum Corpus', 'Ubi Caritas', 'Cantate Domino'] },
-  { category: 'For the liturgy', pieces: ['Gathering & entrance', 'Psalm & acclamation', 'Communion & sending'] },
-  { category: 'Seasonal music', pieces: ['Advent', 'Christmas', 'Lent & Easter'] },
+  {
+    category: 'Sacred Classics',
+    pieces: [
+      'A City Called Heaven',
+      'A New Jerusalem Arise',
+      'A Voice for You',
+      'Awit ng Paghahangad',
+      'Be Thou My Vision',
+      'I Thank My God',
+      'I Want to Walk as a Child of the Light',
+      'Let There Be Praise',
+      'O Love',
+      'Oh How He Loves You and Me',
+      'Set Me as a Seal',
+      'Siyahamba',
+      'Think About His Love',
+      'To Love Our God',
+      'To Rescue a Sinner Like Me',
+      'Until I Reach My Home',
+      'Upon This Rock',
+      'We Are One',
+      'You Are Mine',
+    ],
+  },
+  {
+    category: 'Gala Classics',
+    pieces: [
+      'How Deep Is Your Love',
+      'Segalariak',
+      'Sing, Philippines Sing',
+      'Tenderly',
+    ],
+  },
 ]
